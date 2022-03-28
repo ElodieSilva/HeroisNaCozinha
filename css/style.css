@@ -1,0 +1,340 @@
+/*Imagem do fundo da nossa pagina*/
+body {
+  background: url(../images/bg-body.jpg) repeat center top;
+  color: #d5b084;
+  font-family: "open_sansregular";
+  font-size: 12px;
+  margin: 0;
+  min-width: 960px;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  color: #f2f2f2;
+}
+
+/*Estilo das letras HOME RECEITAS COMUNIDADE...e COMIDA PARA SER APRECIADA*/
+@font-face {
+  font-family: "UltraRegular";
+  src: url("../fonts/ultra-webfont.eot");
+  src: url("../fonts/ultra-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ultra-webfont.woff") format("woff"),
+    url("../fonts/ultra-webfont.ttf") format("truetype"),
+    url("../fonts/ultra-webfont.svg#UltraRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*----------------------------------------------------
+-------------GRID do PARENT----------------------*/
+
+/*Auxilia o centramento da pagina*/
+.cabecalho {
+  background: url(../images/bg-page.png) repeat;
+  margin: 30px auto 0;
+  padding: 10px;
+  width: 940px;
+}
+
+.conteudo {
+  background: url(../images/bg-page.png) repeat;
+  margin: 30px auto 0;
+  padding: 10px;
+  width: 940px;
+}
+
+.rodape {
+  background: url(../images/bg-page.png) repeat;
+  margin: 30px auto 0;
+  padding: 10px;
+  width: 940px;
+}
+
+/*Destaca a pagina de cor de pele*/
+.cabecalho {
+  background: #f5f1e6 url(../images/bg-logo.ppg) no-repeat left top;
+  padding: 0;
+  width: 940px;
+}
+
+.conteudo {
+  background: #f5f1e6 url(../images/bg-logo.ppg) no-repeat left top;
+  padding: 0;
+  width: 940px;
+}
+
+.rodape {
+  background: #f5f1e6 url(../images/bg-logo.ppg) no-repeat left top;
+  padding: 0;
+  width: 940px;
+}
+
+/*----------------------------------------------------------------------
+-------------GRID do BODY- CABECALHO---------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
+/*Posicao da foto do LOGOTIPO*/
+.cabecalho-imagem {
+  background: none;
+  margin: 20px 0 0 0px;
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 1;
+}
+
+/*Login*/
+.cabecalho-login {
+  background: rgba(236, 214, 196, 0.53);
+  margin: 20px 0 0 750px;
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 1;
+}
+
+/*Frase*/
+.cabecalho-frase{
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+/*Espaco entre home receitas comunidade com a imagem dos pimentos*/
+.cabecalho-menus {
+  height: auto;
+  width: 97%;
+  margin: 1.5%;
+}
+/*Orientacao/Alinhamento do home,receitas,comunidade,forum..*/
+.cabecalho-menus {
+  float: left;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+/*Cor das letras do home, receitas,comunidade...*/
+.current {
+  color: #db9e29;
+  display: block;
+  font-family: "UltraRegular";
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/*----------------------------------------------------------------------
+-------------GRID do BODY- MAIN- CONTEUDO---------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
+/*Dimensoes da imagem dos pimentos*/
+.conteudo-imagem-principal {
+  background: none;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 1fr;
+  margin: 0;
+}
+
+/*Direccao das Letras Porque a comida deve ser apreciada*/
+.conteudo-frase-principal {
+  font-family: "UltraRegular";
+  padding: 0;
+  position: relative;
+  height: 100%;
+  margin: 0;
+}
+
+/*Centramento da COMIDA PARA SER APRECIADA*/
+.conteudo-frase-principal {
+  color: #dade7d;
+  display: block;
+  font-size: 35px;
+  left: 200px;
+  text-align: right;
+  position: absolute;
+  top: 25px;
+  text-shadow: 1px 5px #605012;
+}
+
+/*Definicao da cor das letras "Porque a comida e para ser apreciada"*/
+.conteudo-frase-principal {
+  color: #f9b94b;
+  font-size: 45px; /*Tamanho da letra*/
+  line-height: 80px; /*Centramento das letras*/
+  top: 205px;
+  text-shadow: 1px 5px #824622; /*Sombra das letras*/
+  width: 700px;
+}
+
+/* Definicoes para a searchbar*/
+.conteudo-pesquisa {
+  overflow: hidden;
+  margin-left: 20px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 0;
+  padding-left: 65%;
+}
+
+.conteudo-pesquisa input[type="search"] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 2%;
+  margin-right: 16px;
+  font-size: 17px;
+  width: 100%;
+  height: 18px;
+}
+@media screen and (max-width: 600px) {
+  .conteudo-pesquisa input[type="search"] {
+    float: left;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 2px;
+    padding: 14px;
+    border: 1px solid #ccc;
+  }
+}
+
+/*----------------------------------------------------
+Elementos específicos da página adicionar receita*/
+#page div div.body div#content-adicionarreceita {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#page div div#body div#content-adicionarreceita label {
+  width: 200px;
+  height: 18px;
+}
+#page div div#body div#content-adicionarreceita input {
+  width: 200px;
+  height: 20px;
+}
+/*-------------------------------------------------------*/
+
+#page div div.body div {
+  background: none;
+  overflow: hidden;
+  padding: 0 0 30px;
+  width: auto;
+}
+#page div div.body div div {
+  background: none;
+  float: left;
+  width: 660px;
+}
+#page div div.body div#featured div a img {
+  border-radius: 25px;
+}
+#page div div.body div div#blog {
+  width: 685px;
+}
+#page div div.body div div p {
+  font-family: "open_sansregular";
+  font-size: 13px;
+  margin: 0 0 20px;
+}
+#page div div.body div div h3 {
+  color: #858f48;
+  font-family: "UltraRegular";
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0.025em;
+  line-height: 20px;
+  margin: 20px 0;
+}
+#page div div.body div div dl {
+  float: left;
+  margin: 30px 0 10px;
+  width: 330px;
+}
+#page div div.body div div dl dt {
+  color: #a2b83d;
+  font-family: "UltraRegular";
+  font-size: 16px;
+  letter-spacing: -0.025em;
+  line-height: 20px;
+}
+#page div div.body div div dl dd {
+  font-family: "open_sansregular";
+  font-size: 13px;
+  letter-spacing: 0.025em;
+  line-height: 20px;
+  margin: 0;
+}
+#page div div.body div div ul {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+#page div div.body div div ul li {
+  float: left;
+  height: 320px;
+  width: 220px;
+}
+
+#page div div.body div div ul li div a {
+  color: #bfcb75;
+  display: block;
+  font-family: "UltraRegular";
+  font-size: 14px;
+  letter-spacing: -0.025em;
+  line-height: 16px;
+  padding: 14px 0 0;
+  text-decoration: none;
+}
+
+/*Pagina index.html*/
+#page div div.body div#figure span#centro {
+  color: black;
+  font-size: 45px;
+  line-height: 45px;
+  top: 118px;
+  text-shadow: 1px 5px black;
+  width: 590px;
+}
+
+/*-----------------------------------------------------------*/
+/*------------GRID do FOOTER---------------*/
+
+/*Barra do rodape da pagina*/
+.rodape-imagem {
+  background: #f5f1e6;
+  height: 120px;
+  display: grid;
+  grid-template-columns: 20% 1fr 10%;
+  grid-template-rows: 30% 1fr;
+  margin: 0;
+}
+/*Posicao da foto do LOGOTIPO*/
+.rodape-imagem {
+  background: none;
+  margin: 20px 0 0 700px;
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 1;
+}
+/*Rodapé do Quem Somos*/
+.rodape-secundario {
+  float: right;
+  padding: 0 20px;
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 2;
+}
+
+/*Rodapé do Facebook*/
+.rodape-coneccoes {
+  grid-row: 1 / span 2;
+  grid-column: 3 / span 1;
+}
+/*-------------------------------------------------*/
