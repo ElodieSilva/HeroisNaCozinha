@@ -9,6 +9,8 @@ Site:
 
 https://ElodieSilva.github.io/HeroisNaCozinha/
 
+![Sample App Image](https://github.com/ElodieSilva/HeroisNaCozinha/imagem_site.png)
+
 
 
 
