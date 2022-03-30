@@ -15,7 +15,7 @@ https://ElodieSilva.github.io/HeroisNaCozinha/
 <div>
   
 <h1 align="center">   
-  <img  src="https://github.com/ElodieSilva/HeroisNaCozinha/imagem_site.png" />
+  <img  src="https://github.com/ElodieSilva/HeroisNaCozinha/blob/main/imagem_site.png" />
 </h1>
 
 </div>
