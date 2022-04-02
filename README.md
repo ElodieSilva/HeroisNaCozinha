@@ -1,7 +1,7 @@
 # HeroisNaCozinha
 #Site de Receitas
 
-## Comunidade de entusiastas da cozinha, à conquista do bem comer!
+### Comunidade de entusiastas da cozinha, à conquista do bem comer!
 
 
 <div>
