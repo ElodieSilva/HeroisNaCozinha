@@ -24,8 +24,7 @@ body {
 @font-face {
   font-family: "open_sansregular";
   src: url("../fonts/opensans-regular-webfont.eot");
-  src: url("../fonts/opensans-regular-webfont.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"),
     url("../fonts/opensans-regular-webfont.woff") format("woff"),
     url("../opensans-regular-webfont.ttf") format("truetype"),
     url("../opensans-regular-webfont.svg#open_sansregular") format("svg");
@@ -36,16 +35,20 @@ body {
 a {
   outline: none;
 }
+
 img {
   border: 0;
 }
+
 p {
   letter-spacing: 0.025em;
   line-height: 20px;
 }
+
 p a {
   color: #d5af87;
 }
+
 p a:hover {
   color: #bfcb75;
 }
@@ -104,6 +107,8 @@ p a:hover {
   overflow: hidden;
   padding: 0;
   width: auto;
+  
+  
 }
 
 .cabecalho-header img {
@@ -119,25 +124,27 @@ p a:hover {
 }
 
 .cabecalho-frase {
-  font-size: 16px;
-  display: block;
-  left: 120px;
+  font-size: 17px;
+  right: auto;
+  left: auto;
   position: absolute;
-  top: 115px;
-  margin: 20px 0 0 250px;
+  top: 100px;
+  margin: 0px 0 0 0px;
   grid-row: 1 / span 2;
   grid-column: 1 / span 1;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;  
 }
 
 .cabecalho-header ul {
   text-align: center;
   float: right;
   list-style: none;
-  margin: 67px 0 0;
+  margin: 27px 0 0;
   overflow: hidden;
   padding: 0;
-  width: 745px;
-}
+  width: 750px;
+  }
 
 .cabecalho-header ul li {
   float: left;
@@ -151,6 +158,7 @@ p a:hover {
   font-family: "UltraRegular";
   font-size: 15px;
   text-decoration: none;
+  
 }
 
 /*Sublinhado do cabecalho*/
@@ -225,6 +233,7 @@ input[type="search"].conteudo-pesquisa {
   width: 100%;
   height: 18px;
 }
+
 @media screen and (max-width: 600px) {
   input[type="search"] .conteudo-pesquisa {
     float: left;
@@ -278,57 +287,129 @@ Elementos específicos da página adicionar receita*/
 
 /*-----------------------------------------------------------*/
 /*------------GRID do FOOTER---------------*/
-.rodape {
+div.rodape {
   background: #f5f1e6;
-  height: 200px;
+  height: 175px;
 }
 
 .rodape img {
-  background: none;
-  float: left;
-  width: 190px;
-  display: inline-block;
-  margin: 20px 0 0 700px;
-  grid-row: 1 / span 2;
-  grid-column: 1 / span 1;
+  padding: 0px;
+  margin: 0 0 0 700px;
 }
 
-div p.rodape-footnote {
-  background: none;
-  width: 190px;
+.rodape-footnote {
   font-family: "UltraRegular";
   font-size: 8px;
-  line-height: 19px;
-  display: block;
-  position: absolute;
-  margin: 20px 0 0 250px;
-  grid-row: 1 / span 2;
-  grid-column: 1 / span 1;
-  align-items: center;
-  right: 500px;
+  border-top: 0.4px solid #e0ceaa;
+  text-align: center;
+  margin: 0 0 0 250px;
+
+
+}
+
+div .rodape-principal {
+  background: none;
+  margin: 0 0 0 25px;
+  position: relative;
+  width: 655px;
+  right: auto;
+  left: auto;
+
+}
+
+div .rodape-principal ul {
+  list-style: none;
+  text-align: center;
+  float: none;
+  list-style: none;
+  margin: 0px 0 0;
+  overflow: hidden;
+  padding: 60;
+  width: 740px;
+}
+
+div .rodape-principal ul li {
+  border-left: 2px solid #e0ceaa;
+  float: left;
+  height: 15px;
+  line-height: 13px;
+  padding: 0 10px;
+
+}
+
+div .rodape-principal ul li a {
+  color: #e0ceab;
+  font-family: 'UltraRegular';
+  letter-spacing: -0.025em;
+  text-decoration: none;
+}
+
+
+div .rodape-principal ul li.current a {
+  color: #becb73;
+  border-bottom: 2px solid #e8e7cb;
+}
+
+div .rodape-principal ul li:first-child {
+  border: 0;
+  padding: 0 20px 0 0;
+}
+
+
+div .rodape-principal p a {
+  color: #c6a971;
+}
+
+div .rodape-principal p a:hover {
+  color: #91a130;
+}
+
+div.rodape-coneccoes {
+  background: none;
+  float: none;
+  height: 18px;
+  margin: 0;
+
+}
+
+div.rodape-coneccoes a {
+  display: inline-block;
+  float: none;
+  height: 18px;
+  margin: 0 8px;
+  text-indent: -99999px;
+  width: 18px;
+
 }
 
 div .rodape-coneccoes a#facebook {
-	background: url(../images/icons.png) no-repeat 0 0;
+  background: url(../images/icons.png) no-repeat 0 0;
 }
+
 div .rodape-coneccoes a#facebook:hover {
-	background: url(../images/icons.png) no-repeat -18px 0;
+  background: url(../images/icons.png) no-repeat -18px 0;
 }
+
 div .rodape-coneccoes a#twitter {
-	background: url(../images/icons.png) no-repeat 0 -28px;
+  background: url(../images/icons.png) no-repeat 0 -28px;
 }
+
 div .rodape-coneccoes a#twitter:hover {
-	background: url(../images/icons.png) no-repeat -18px -28px;
+  background: url(../images/icons.png) no-repeat -18px -28px;
 }
+
 div .rodape-coneccoes a#googleplus {
-	background: url(../images/icons.png) no-repeat 0 -56px;
+  background: url(../images/icons.png) no-repeat 0 -56px;
 }
+
 div .rodape-coneccoes a#googleplus:hover {
-	background: url(../images/icons.png) no-repeat -18px -56px;
+  background: url(../images/icons.png) no-repeat -18px -56px;
 }
+
 div .rodape-coneccoes a#rss {
-	background: url(../images/icons.png) no-repeat 0 -84px;
+  background: url(../images/icons.png) no-repeat 0 -84px;
 }
+
 div .rodape-coneccoes a#rss:hover {
-	background: url(../images/icons.png) no-repeat -18px -84px;
+  background: url(../images/icons.png) no-repeat -18px -84px;
 }
