@@ -7,7 +7,7 @@ Site de Receitas
 <div>
   
 <h1 align="center">   
-  <img  src="https://github.com/ElodieSilva/HeroisNaCozinha/blob/main/imagem_site.png" />
+  <img  src="https://github.com/ElodieSilva/HeroisNaCozinha/blob/main/imagemsite.png" />
 </h1>
 
 </div>
